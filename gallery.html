@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- BASIC SEO -->
+<meta charset="UTF-8">
+<title>Gallery — Roam Untamed Wildlife & Travel Photography</title>
+<meta name="description" content="Explore the photo gallery of Roam Untamed — wildlife & travel photography by Parvez. Tigers, mountains, wilderness & soulful journeys across India.">
+<meta name="keywords" content="wildlife photography gallery, travel photography gallery, tigers, landscapes, safari photography, Roam Untamed">
+<meta name="author" content="Roam Untamed">
+<meta name="robots" content="index, follow">
+
+<!-- MOBILE -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SOCIAL PREVIEW -->
+<meta property="og:title" content="Roam Untamed — Photography Gallery">
+<meta property="og:description" content="Wildlife & travel photography — tigers, mountains & wilderness across India.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roamuntamed.in/gallery.html">
+<meta property="og:image" content="https://roamuntamed.in/images/hero.jpg">
+
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+      background:black;
+      color:gold;
+      font-family:Arial, sans-serif;
+    }
+
+    .card{
+      background:#111;
+      border-radius:18px;
+      padding:30px;
+      text-align:center;
+      border:1px solid gold;
+      font-size:22px;
+      cursor:pointer;
+    }
+
+    .card:hover{
+      background:#222;
+      color:white;
+    }
+
+    a{
+      text-decoration:none;
+      color:gold;
+    }
+
+    nav a{
+      margin-right:20px;
+    }
+  </style>
+</head>
+
+<!-- DISABLE RIGHT CLICK -->
+<body oncontextmenu="return false;">
+
+  <!-- NAV BAR -->
+  <header class="p-6 flex justify-between max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-amber-400">
+      ROAM UNTAMED
+    </h1>
+
+    <nav class="space-x-6 text-amber-400">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+           <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <section class="max-w-6xl mx-auto p-6">
+    <h2 class="text-3xl font-bold text-amber-400 mb-8">
+      Explore Galleries
+    </h2>
+
+    <!-- GRID -->
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:30px">
+
+      <a href="gallery-wildlife.html">
+        <div class="card">Wildlife</div>
+      </a>
+
+      <a href="gallery-birds.html">
+        <div class="card">Birds</div>
+      </a>
+
+      <a href="gallery-nature.html">
+        <div class="card">Nature</div>
+      </a>
+
+      <a href="gallery-travel.html">
+        <div class="card">Travel</div>
+      </a>
+
+      <a href="gallery-landscapes.html">
+        <div class="card">Landscapes</div>
+      </a>
+<a href="awards.html">
+  <div class="card">
+    Awards
+  </div>
+</a>
+
+
+    </div>
+
+  </section>
+<script>
+document.addEventListener("contextmenu", function(e){
+    if(e.target.tagName === "IMG"){
+        e.preventDefault();
+        alert("Image protection enabled 😊");
+    }
+});
+</script>
+<script>
+// Disable right-click on images
+document.addEventListener("contextmenu", function(e){
+    if(e.target.tagName === "IMG"){
+        e.preventDefault();
+        alert("Image protection enabled 😊");
+    }
+});
+
+// Disable dragging images
+document.addEventListener("dragstart", function(e){
+    if(e.target.tagName === "IMG"){
+        e.preventDefault();
+    }
+});
+
+// Disable saving via long-press (mobile)
+document.addEventListener("touchstart", function(e){
+    if(e.target.tagName === "IMG"){
+        e.target.style.webkitTouchCallout = "none";
+        e.target.style.webkitUserSelect = "none";
+        e.target.style.userSelect = "none";
+    }
+}, true);
+
+// Extra — disable copy on images
+document.addEventListener("copy", function(e){
+    if(window.getSelection().toString().includes(".jpg") || 
+       e.target.tagName === "IMG"){
+        e.preventDefault();
+    }
+});
+</script>
+
+<footer style="margin-top:60px; padding:18px; opacity:0.75; font-size:8px; line-height:1.5; text-align:center;">
+ © Roam Untamed — Photography by Tabassum PARVEZ• All Rights Reserved
+ <br>
+ 🌐 www.roamuntamed.in • 📸 Instagram: @roam_untamed7 • ✉️ Email: roam.untamed7@gmail.com,
+YouTube: @RoamUntamed7
+</footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <!-- BASIC SEO -->
+    <meta charset="UTF-8">
+    <title>Travel Journal — Roam Untamed</title>
+    <meta name="description" content="A heartfelt travel journal by Parvez — documenting road trips, mountains, wildlife, people, wilderness and soulful journeys across India.">
+    <meta name="keywords" content="travel stories, travel blog India, road trip journal, Roam Untamed, Ladakh road trip, wildlife travel stories, Himalayas blog">
+    <meta name="author" content="Roam Untamed">
+    <meta name="robots" content="index, follow">
+
+    <!-- MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SOCIAL PREVIEW -->
+    <meta property="og:title" content="Travel Journal — Roam Untamed">
+    <meta property="og:description" content="Stories from the road — mountains, wildlife, wilderness and raw travel experiences by Parvez.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://roamuntamed.in/travel-journal.html">
+    <meta property="og:image" content="https://roamuntamed.in/images/hero.jpg">
+
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+  background:black;
+  color:gold;
+  font-family:Arial;
+}
+.card{
+  border-radius:18px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="max-w-6xl mx-auto p-6">
+
+  <h1 class="text-3xl font-bold text-amber-400 mb-6">
+    Travel Gallery
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+  <img src="images/Travel/t1.jpg" class="rounded-xl card">
+  <img src="images/Travel/t2.jpg" class="rounded-xl card">
+  <img src="images/Travel/t3.jpg" class="rounded-xl card">
+  <img src="images/Travel/t4.jpg" class="rounded-xl card">
+  <img src="images/Travel/t5.jpg" class="rounded-xl card">
+  <img src="images/Travel/t6.jpg" class="rounded-xl card">
+
+</div>
+<script>
+document.addEventListener("contextmenu", function(e){
+    if(e.target.tagName === "IMG"){
+        e.preventDefault();
+        alert("Image protection enabled 😊");
+    }
+});
+</script>
+<script>
+// Disable right-click on images
+document.addEventListener("contextmenu", function(e){
+    if(e.target.tagName === "IMG"){
+        e.preventDefault();
+        alert("Image protection enabled 😊");
+    }
+});
+
+// Disable dragging images
+document.addEventListener("dragstart", function(e){
+    if(e.target.tagName === "IMG"){
+        e.preventDefault();
+    }
+});
+
+// Disable saving via long-press (mobile)
+document.addEventListener("touchstart", function(e){
+    if(e.target.tagName === "IMG"){
+        e.target.style.webkitTouchCallout = "none";
+        e.target.style.webkitUserSelect = "none";
+        e.target.style.userSelect = "none";
+    }
+}, true);
+
+// Extra — disable copy on images
+document.addEventListener("copy", function(e){
+    if(window.getSelection().toString().includes(".jpg") || 
+       e.target.tagName === "IMG"){
+        e.preventDefault();
+    }
+});
+</script>
+
+<footer style="margin-top:60px; padding:18px; opacity:0.75; font-size:8px; line-height:1.5; text-align:center;">
+ © Roam Untamed — Photography by Tabassum PARVEZ• All Rights Reserved
+ <br>
+ 🌐 www.roamuntamed.in • 📸 Instagram: @roam_untamed7 • ✉️ Email: roam.untamed7@gmail.com,
+YouTube: @RoamUntamed7
+</footer>
+
+
+</body>
+</html>
