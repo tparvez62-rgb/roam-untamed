@@ -20,12 +20,17 @@
     }
 
     /* Prevent dragging images */
+    
     .gallery-big{
   width:100%;
   height:260px;
   object-fit:cover;
   border-radius:12px;
   margin-bottom:20px;
+}
+img{
+  -webkit-user-drag:none;
+  user-drag:none;
 }
 
     img{
@@ -60,13 +65,17 @@
 
 <!-- IMAGE GRID -->
     </div>
-<img src="n1.jpg" class="gallery-big">
-<img src="n2.jpg" class="gallery-big">
-<img src="n3.jpg" class="gallery-big">
-<img src="n4.jpg" class="gallery-big">
-<img src="n5.jpg" class="gallery-big">
-<img src="n6.jpg" class="gallery-big">
+<div class="gallery-grid">
+
+  <img src="n1.jpg" class="gallery-big">
+  <img src="n2.jpg" class="gallery-big">
+  <img src="n3.jpg" class="gallery-big">
+  <img src="n4.jpg" class="gallery-big">
+  <img src="n5.jpg" class="gallery-big">
+  <img src="n6.jpg" class="gallery-big">
+
 </div>
+
 
 
 
@@ -124,6 +133,7 @@ YouTube: @RoamUntamed7
 
 </body>
 </html>
+
 
 
 
