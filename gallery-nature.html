@@ -22,13 +22,19 @@
     /* Prevent dragging images */
     
     <style>
-.gallery-grid img{
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  margin: 20px auto;
-  display: block;
+.gallery-grid{
+  width:85%;
+  margin:40px auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:30px;
 }
+
+.gallery-big{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:12px;
 
 </style>
 
@@ -155,6 +161,7 @@ YouTube: @RoamUntamed7
 
 </body>
 </html>
+
 
 
 
