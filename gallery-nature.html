@@ -27,20 +27,21 @@
    grid-template-columns: repeat(3, 1fr);
    gap:30px;
  }
-.gallery-big{
-   width:100%;
-   height:260px;
-   object-fit:cover;
-   border-radius:12px;
- }
- .gallery-grid img{
-  width:100%;
+
+.gallery-grid{
+  width:85%;
+  margin:40px auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:30px;
 }
 
-   -webkit-user-drag:none;
-   user-drag:none;
- }
-</style>
+img{
+  -webkit-user-drag:none;
+  user-drag:none;
+
+
+   
     
 
 </head>
@@ -69,22 +70,17 @@
     </h2>
 
 <!-- IMAGE GRID -->
-    </div>
-<div class="gallery-grid">
-
-<div class="gallery-grid">
-<img src="n1.jpg" class="gallery-big">
+   <div class="gallery-grid">
+  <img src="n1.jpg" class="gallery-big">
   <img src="n2.jpg" class="gallery-big">
   <img src="n3.jpg" class="gallery-big">
   <img src="n4.jpg" class="gallery-big">
   <img src="n5.jpg" class="gallery-big">
   <img src="n6.jpg" class="gallery-big">
-
 </div>
 
 
-
-  </section>
+</section>
 <script>
 document.addEventListener("contextmenu", function(e){
     if(e.target.tagName === "IMG"){
@@ -135,6 +131,7 @@ YouTube: @RoamUntamed7
 
 </body>
 </html>
+
 
 
 
